@@ -1,0 +1,34 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+The diff sorts down the contents of the file, leaving only those lines
+that have been changed recently (since the last commit). The lines that were removed have a minus sign preceding them and the newly introduced lines are preceded by a plus sign. This makes identification of bugs,
+whether they be typos or functional bugs, much quicker and easier.
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+Tracking your mistakes or mis-steps by explicitly seeing them juxtaposed against the revised version provides a great opportunity to analyze your
+general problem solving approach for flaws. Your first crack at solving a problem may not lead to the absolute best solution.
+Comparing your first attempt to subsequent revisions should help to avoid
+repeating mistakes going forward.
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Pro Manual: Allows flexibility in deciding when to commit. A programmer paying close attention to the nature of his/her edits will be able to choose logically consistent commit points by grouping types of changes together and separating others.
+Con Manual: Poor choices can be made by the programmer and since auto-save is not a feature, the only commits available to work with will be those made manually.
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Keeping files together can be helpful in situations where multiple files have dependencies. This is common for instance when one python file 'pulls' from another to share functions across a larger program. Git allows for this due to it's use as a coding version control platform. Platforms like Google Docs which generally are aimed at rich text documents like Word do not generally rely on other files in any way and are therefore best treated separately.
+
+
+How might using version control make you more confident to make changes that could break something?
+
+When a programmer knows for certain that reversion to a working version of code is only a few steps away, it frees them to experiment on a separate version of the code that, if broken, can just be discarded for a new one without affecting the master code.
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I plan to use Git for all my projects going forward. In the near future that means my code for the Intro to Machine Learning course and any side projects I may undertake in the mean time.
