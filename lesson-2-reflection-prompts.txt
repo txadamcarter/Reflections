@@ -1,0 +1,30 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When you initialize a repository git starts tracking the files in the directory in which the `git init` command was run. No initial commits are made.
+It needs to be done so that git has a starting point from which to save a version of the filesystem.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+The staging area represents a middle ground where the changes you have made to different files can be arranged prior to being selected or deselected for inclusion in the final push to the repo.
+
+1) Initialize a repo
+2) Add files to staging area
+3) Commit files to repository
+4) Push files to remote
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+To ensure one commit per logical change, the staging area can be used as a means of setting up a file for comparison to either the most recent commit (git diff --staged) or what is in the working directory (git diff).
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?

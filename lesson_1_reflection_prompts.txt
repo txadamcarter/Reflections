@@ -1,0 +1,34 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    The diff narrows down the lines you have to examine in order to find the problem. By placing a (-) before any line that was deleted and a (+) in front of any line added, you can easily see what was changed between two versions of a file.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Using version control should presumably save enormous amounts of time potentially. If a programmer were to make an accidental deletion of a critical file for instance, it can save you the time required to recover it manually or otherwise. It also should cut down on debugging time assuming the programmer is working on iteratively improving on a working system. If previous versions of the system were working to an acceptable degree and the new version does not, you can always revert to the old system as a fallback.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    The largest con of the manual commit method is the possibility of the programmer forgetting to make a commit. The main pro is in engaging the programmer with the granular details of the changes being made to the system rather than letting the changes be handled in the background.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    At times it can be nice to include multiple files in one commit manually rather than separately in the situation where the programmer is aware of all changes in the files and that they work when implemented together and their inclusion in one commit will not result in error. Such safe times include when changes are limited to comments or a README, rather than any code changes.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Git log shows the history of commits. With it you can view each commit message to get a feel for what changes were made in that commit and copy it's commit ID if you need to inspect it more closely. 
+    Git diff shows the listing of line additions and deletions that account for the differences between two files.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Knowing with confidence that a prior working version of the code can always be relied upon as backup will give programmers the confidence to make any type of change they want to a system, no matter how potentially damaging. This provides a lot of freedom to experiment.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I'm going to create repositories for each of my previous Udacity projects. Starting with the Intro to Programming NanoDegree and including Deep Learning Nanodegree and the first semester of Robotics Software Engineer NanoDegree.
