@@ -1,0 +1,13 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Git creates the tracking environment used for version control when a repository is initialized. It needs to be done in order for there to be a central location for the first and subsequent commits to be rooted to.
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Objects in the staging area are only transiently present. They are on their way to being committed to the repository or relegated back to the working directory. The value in this 'middle step' comes in organizing our thoughts around what exactly we are about to include or not include in a commit before making it.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+The staging area is ideal for arranging files in a way such that only the single logical change you want included is present. Using git diff with no arguments compares the working directory contents to the staging area. Using git --staged compares the staging area to the most recent commit. Using git with two commit ID's as arguments compares those two commits.
