@@ -21,10 +21,18 @@ To ensure one commit per logical change, the staging area can be used as a means
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Branches are helpful in situations where experimental changes to a program need to be made. If the experimental changes break the code, they will be confined to a branch separate from the main 'master' branch and therefore reversion to a working set of code can always be achieved.
+
 How do the diagrams help you visualize the branch structure?
+
+A diagram of the branching structure of a git history can be helpful to clear up any confusion regarding what is reachable from where and why a certain change you wanted to include is being orphaned on it's own branch or where a merge may make unwanted changes to the master branch.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+The result of merging two branches is a branch containing the full histories of both included branches. We represent it in the diagram as the joining of two branches at one point because this reminds us that any changes made prior to this merge point will now be included in one united history.
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+Pro's of automatic merging include convenience. Cons include possible unresolvable merge conflicts leading to failure. Manual merges will generally result in a resolution to all conflicts and a successful merge, but they take worker input and time.
